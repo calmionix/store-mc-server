@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark" data-lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial - Calmionix Minecraft Server</title>
+  <meta name="description" content="Panduan cara membeli rank dan shard di Calmionix Server.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Calmionix">
+        <span>Calmionix</span>
+      </a>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" data-lang="nav_home">Beranda</a></li>
+        <li><a href="shop.html" data-lang="nav_shop">Toko</a></li>
+        <li><a href="tutorial.html" class="active" data-lang="nav_tutorial">Tutorial</a></li>
+        <li><a href="https://discord.gg/qfdBAW29sT" target="_blank" data-lang="nav_discord">Discord</a></li>
+      </ul>
+      
+      <div class="nav-controls">
+        <button id="lang-toggle" class="btn-icon" title="Ganti Bahasa">🇮🇩</button>
+        <button id="theme-toggle" class="btn-icon" title="Ganti Tema">☀️</button>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tutorial Content -->
+  <main class="tutorial-content">
+    
+    <!-- Header -->
+    <header class="tutorial-header">
+      <h1 data-lang="tutorial_public_title">Cara Membeli Rank & Shard</h1>
+      <p style="color: var(--text-secondary);">Panduan lengkap untuk pembelian di Calmionix</p>
+    </header>
+
+    <!-- Mode Toggle -->
+    <div class="mode-toggle">
+      <button class="btn btn-secondary active" id="user-mode-btn" onclick="switchMode('user')" data-lang="user_mode_btn">Mode User</button>
+      <button class="btn btn-secondary" id="admin-mode-btn" onclick="switchMode('admin')" data-lang="admin_mode_btn">Mode Admin</button>
+    </div>
+
+    <!-- USER MODE (Public) -->
+    <div id="user-content" class="user-content">
+      
+      <section class="tutorial-section">
+        <h2>Langkah-langkah Pembelian</h2>
+        
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 data-lang="tutorial_step1">Pilih produk (Rank / Shard)</h4>
+              <p>Kunjungi halaman toko dan pilih produk yang ingin kamu beli. Kami menyediakan berbagai rank dan paket shard.</p>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 data-lang="tutorial_step2">Klik "Beli Sekarang"</h4>
+              <p>Setelah memilih produk, klik tombol "Beli Sekarang" pada kartu produk.</p>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 data-lang="tutorial_step3">Masukkan username Minecraft</h4>
+              <p>Isi username Minecraft kamu dengan benar. Pastikan tidak ada typo karena reward akan dikirim ke username tersebut.</p>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 data-lang="tutorial_step4">Lanjutkan ke pembayaran</h4>
+              <p>Klik "Lanjut Pembayaran" dan ikuti instruksi pembayaran yang tersedia (QRIS, Transfer Bank, E-Wallet).</p>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h4 data-lang="tutorial_step5">Setelah pembayaran berhasil, reward otomatis masuk</h4>
+              <p>Setelah pembayaran dikonfirmasi, rank atau shard akan otomatis masuk ke akun Minecraft kamu dalam beberapa menit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tutorial-section">
+        <h2>Metode Pembayaran</h2>
+        <p>Kami mendukung berbagai metode pembayaran:</p>
+        <div class="steps" style="margin-top: var(--space-4);">
+          <div class="step">
+            <div class="step-content">
+              <h4>📱 QRIS</h4>
+              <p>Scan QR code dengan aplikasi e-wallet atau mobile banking kamu.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-content">
+              <h4>🏦 Transfer Bank</h4>
+              <p>Transfer ke rekening bank yang tersedia (BCA, BNI, BRI, Mandiri).</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-content">
+              <h4>💳 E-Wallet</h4>
+              <p>Gopay, OVO, DANA, LinkAja, dan ShopeePay.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tutorial-section" style="text-align: center; padding: var(--space-8); background: var(--bg-glass); border-radius: var(--radius-xl); border: 1px solid var(--border-color);">
+        <h3 style="margin-bottom: var(--space-4);" data-lang="tutorial_help_text">Jika mengalami masalah, silakan tanya di Discord</h3>
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-6);">Tim support kami siap membantu 24/7</p>
+        <a href="https://discord.gg/qfdBAW29sT" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large" data-lang="discord_btn">Gabung Discord</a>
+      </section>
+
+    </div>
+
+    <!-- ADMIN MODE (Hidden by default) -->
+    <div id="admin-content" class="admin-content">
+      
+      <section class="tutorial-section">
+        <h2 data-lang="admin_title">Panduan Integrasi Payment</h2>
+        <p data-lang="admin_intro">Bagian ini berisi panduan teknis untuk mengintegrasikan sistem pembayaran.</p>
+      </section>
+
+      <section class="tutorial-section">
+        <h2 data-lang="admin_step1_title">1. Lokasi Integrasi</h2>
+        <p data-lang="admin_step1_text">Semua logic pembayaran ada di file checkout.js pada fungsi processPayment().</p>
+        
+        <div class="code-block">
+          <code>
+<span class="code-comment">// File: js/checkout.js</span><br><br>
+<span class="code-keyword">function</span> <span class="code-keyword">processPayment</span>(productId, username) {<br>
+ &nbsp;&nbsp;<span class="code-keyword">const</span> product = products[productId];<br><br>
+ &nbsp;&nbsp;<span class="code-comment">// ========================================</span><br>
+ &nbsp;&nbsp;<span class="code-comment">// PAYMENT INTEGRATION AREA</span><br>
+ &nbsp;&nbsp;<span class="code-comment">// ========================================</span><br>
+ &nbsp;&nbsp;<span class="code-comment">// 1. Connect to Midtrans / Tebex</span><br>
+ &nbsp;&nbsp;<span class="code-comment">// 2. Send transaction data to backend</span><br>
+ &nbsp;&nbsp;<span class="code-comment">// 3. Handle success response</span><br>
+ &nbsp;&nbsp;<span class="code-comment">// 4. Trigger Minecraft reward (rank/shard)</span><br>
+}
+          </code>
+        </div>
+      </section>
+
+      <section class="tutorial-section">
+        <h2 data-lang="admin_step2_title">2. Metode Tebex</h2>
+        <p data-lang="admin_step2_text">Tebex adalah solusi all-in-one untuk Minecraft server store. Plugin otomatis memberikan reward setelah pembayaran.</p>
+        
+        <h3 style="margin-top: var(--space-6); margin-bottom: var(--space-3); color: var(--primary-400);">Langkah-langkah:</h3>
+        <ol style="margin-left: var(--space-6); color: var(--text-secondary); line-height: 2;">
+          <li>Buat akun di <a href="https://tebex.io" target="_blank" style="color: var(--primary-400);">tebex.io</a></li>
+          <li>Hubungkan dengan server Minecraft kamu</li>
+          <li>Install plugin Tebex di server</li>
+          <li>Buat package untuk setiap rank/shard</li>
+          <li>Set command yang akan dijalankan (contoh: <code>lp user {username} parent add vip</code>)</li>
+          <li>Ganti link "Beli Sekarang" dengan link checkout Tebex</li>
+        </ol>
+
+        <div class="code-block">
+          <code>
+<span class="code-comment">// Contoh: Redirect ke Tebex checkout</span><br>
+<span class="code-keyword">function</span> <span class="code-keyword">processPayment</span>(productId, username) {<br>
+ &nbsp;&nbsp;<span class="code-keyword">const</span> tebexUrl = <span class="code-string">`https://checkout.tebex.io/your-store/${productId}?username=${username}`</span>;<br>
+ &nbsp;&nbsp;window.location.href = tebexUrl;<br>
+}
+          </code>
+        </div>
+      </section>
+
+      <section class="tutorial-section">
+        <h2 data-lang="admin_step3_title">3. Metode Midtrans</h2>
+        <p data-lang="admin_step3_text">Midtrans adalah payment gateway lokal Indonesia. Memerlukan backend untuk handle webhook.</p>
+        
+        <h3 style="margin-top: var(--space-6); margin-bottom: var(--space-3); color: var(--primary-400);">Langkah-langkah:</h3>
+        <ol style="margin-left: var(--space-6); color: var(--text-secondary); line-height: 2;">
+          <li>Buat akun di <a href="https://midtrans.com" target="_blank" style="color: var(--primary-400);">midtrans.com</a></li>
+          <li>Dapatkan Server Key dan Client Key</li>
+          <li>Buat backend endpoint untuk create transaction</li>
+          <li>Integrasi Snap.js di frontend</li>
+          <li>Setup webhook untuk handle payment notification</li>
+          <li>Kirim command ke Minecraft server setelah pembayaran sukses</li>
+        </ol>
+
+        <div class="code-block">
+          <code>
+<span class="code-comment">// 1. Create transaction di backend</span><br>
+<span class="code-keyword">const</span> response = <span class="code-keyword">await</span> fetch(<span class="code-string">'/api/create-transaction'</span>, {<br>
+ &nbsp;&nbsp;method: <span class="code-string">'POST'</span>,<br>
+ &nbsp;&nbsp;body: JSON.stringify({ productId, username })<br>
+});<br>
+<span class="code-keyword">const</span> { token } = <span class="code-keyword">await</span> response.json();<br><br>
+<span class="code-comment">// 2. Open Midtrans Snap</span><br>
+window.snap.pay(token, {<br>
+ &nbsp;&nbsp;<span class="code-keyword">onSuccess</span>: <span class="code-keyword">function</span>(result) {<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-comment">// Trigger Minecraft reward</span><br>
+ &nbsp;&nbsp;}<br>
+});
+          </code>
+        </div>
+      </section>
+
+      <section class="tutorial-section">
+        <h2 data-lang="admin_step4_title">4. Integrasi Minecraft</h2>
+        <p data-lang="admin_step4_text">Gunakan LuckPerms untuk memberikan rank. Gunakan RCON atau plugin untuk eksekusi command.</p>
+        
+        <h3 style="margin-top: var(--space-6); margin-bottom: var(--space-3); color: var(--primary-400);">Opsi 1: LuckPerms + Webhook</h3>
+        <div class="code-block">
+          <code>
+<span class="code-comment">// Setelah pembayaran sukses, kirim command:</span><br>
+<span class="code-string">`lp user ${username} parent add ${rank}`</span><br><br>
+<span class="code-comment">// Bisa menggunakan:</span><br>
+<span class="code-comment">// - RCON langsung ke server</span><br>
+<span class="code-comment">// - Plugin API endpoint</span><br>
+<span class="code-comment">// - Tebex plugin (otomatis)</span>
+          </code>
+        </div>
+
+        <h3 style="margin-top: var(--space-6); margin-bottom: var(--space-3); color: var(--primary-400);">Opsi 2: RCON Node.js</h3>
+        <div class="code-block">
+          <code>
+<span class="code-keyword">const</span> Rcon = <span class="code-keyword">require</span>(<span class="code-string">'rcon'</span>);<br><br>
+<span class="code-keyword">const</span> rcon = <span class="code-keyword">new</span> Rcon(<span class="code-string">'localhost'</span>, 25575, <span class="code-string">'password'</span>);<br><br>
+<span class="code-keyword">await</span> rcon.connect();<br>
+<span class="code-keyword">await</span> rcon.send(<span class="code-string">`lp user ${username} parent add ${rank}`</span>);<br>
+<span class="code-keyword">await</span> rcon.disconnect();
+          </code>
+        </div>
+      </section>
+
+      <section class="tutorial-section">
+        <h2 data-lang="admin_step5_title">5. Alur Lengkap</h2>
+        <p data-lang="admin_step5_text">User → Pilih Produk → Pembayaran → Webhook → Server → Reward</p>
+        
+        <div class="flow-diagram">
+          <div class="flow-step">User</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step">Pilih Produk</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step">Pembayaran</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step">Webhook</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step">Server</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step">Reward</div>
+        </div>
+      </section>
+
+      <section class="tutorial-section">
+        <h2>Daftar Product ID</h2>
+        <table style="width: 100%; border-collapse: collapse; margin-top: var(--space-4);">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--border-color);">
+              <th style="text-align: left; padding: var(--space-3); color: var(--primary-400);">ID</th>
+              <th style="text-align: left; padding: var(--space-3); color: var(--primary-400);">Nama</th>
+              <th style="text-align: left; padding: var(--space-3); color: var(--primary-400);">Harga</th>
+            </tr>
+          </thead>
+          <tbody style="color: var(--text-secondary);">
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: var(--space-3); font-family: monospace;">vip</td>
+              <td style="padding: var(--space-3);">Rank VIP</td>
+              <td style="padding: var(--space-3);">Rp 25.000</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: var(--space-3); font-family: monospace;">mvp</td>
+              <td style="padding: var(--space-3);">Rank MVP</td>
+              <td style="padding: var(--space-3);">Rp 50.000</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: var(--space-3); font-family: monospace;">legend</td>
+              <td style="padding: var(--space-3);">Rank Legend</td>
+              <td style="padding: var(--space-3);">Rp 100.000</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: var(--space-3); font-family: monospace;">god</td>
+              <td style="padding: var(--space-3);">Rank God</td>
+              <td style="padding: var(--space-3);">Rp 200.000</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: var(--space-3); font-family: monospace;">shards-100</td>
+              <td style="padding: var(--space-3);">100 Shard</td>
+              <td style="padding: var(--space-3);">Rp 10.000</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: var(--space-3); font-family: monospace;">shards-500</td>
+              <td style="padding: var(--space-3);">500 Shard</td>
+              <td style="padding: var(--space-3);">Rp 45.000</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: var(--space-3); font-family: monospace;">shards-1000</td>
+              <td style="padding: var(--space-3);">1000 Shard</td>
+              <td style="padding: var(--space-3);">Rp 85.000</td>
+            </tr>
+            <tr>
+              <td style="padding: var(--space-3); font-family: monospace;">shards-5000</td>
+              <td style="padding: var(--space-3);">5000 Shard</td>
+              <td style="padding: var(--space-3);">Rp 400.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="assets/images/logo.png" alt="Calmionix">
+      <span>Calmionix</span>
+    </div>
+    <p data-lang="footer_copyright">Hak Cipta 2024 Calmionix. Tidak berafiliasi dengan Mojang Studios.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/lang.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+  
+  <script>
+    // Mode Switcher
+    function switchMode(mode) {
+      const userContent = document.getElementById('user-content');
+      const adminContent = document.getElementById('admin-content');
+      const userBtn = document.getElementById('user-mode-btn');
+      const adminBtn = document.getElementById('admin-mode-btn');
+      
+      if (mode === 'admin') {
+        userContent.style.display = 'none';
+        adminContent.style.display = 'block';
+        adminContent.classList.add('active');
+        userBtn.classList.remove('active');
+        adminBtn.classList.add('active');
+      } else {
+        userContent.style.display = 'block';
+        adminContent.style.display = 'none';
+        adminContent.classList.remove('active');
+        adminBtn.classList.remove('active');
+        userBtn.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>

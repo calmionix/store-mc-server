@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark" data-lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calmionix - Minecraft Server Store</title>
+  <meta name="description" content="Toko resmi Calmionix Minecraft Server. Beli rank, shard, dan item eksklusif.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Calmionix">
+        <span>Calmionix</span>
+      </a>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active" data-lang="nav_home">Beranda</a></li>
+        <li><a href="shop.html" data-lang="nav_shop">Toko</a></li>
+        <li><a href="tutorial.html" data-lang="nav_tutorial">Tutorial</a></li>
+        <li><a href="https://discord.gg/qfdBAW29sT" target="_blank" data-lang="nav_discord">Discord</a></li>
+      </ul>
+      
+      <div class="nav-controls">
+        <button id="lang-toggle" class="btn-icon" title="Ganti Bahasa">🇮🇩</button>
+        <button id="theme-toggle" class="btn-icon" title="Ganti Tema">☀️</button>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 data-lang="hero_title">Calmionix Server</h1>
+      <p data-lang="hero_subtitle">Beli Rank & Shard untuk meningkatkan pengalaman bermainmu</p>
+      
+      <div class="hero-buttons">
+        <a href="shop.html#ranks" class="btn btn-primary btn-large" data-lang="btn_buy_rank">Beli Rank</a>
+        <a href="shop.html#shards" class="btn btn-secondary btn-large" data-lang="btn_buy_shard">Beli Shard</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Server Info Section -->
+  <section class="server-info">
+    <div class="card server-card">
+      <h2 data-lang="server_info_title">Info Server</h2>
+      
+      <div class="server-details">
+        <div class="server-detail">
+          <div class="label" data-lang="server_ip_label">IP Server</div>
+          <div class="value">calmionix.fun</div>
+        </div>
+        <div class="server-detail">
+          <div class="label" data-lang="server_port_label">Port</div>
+          <div class="value">19133</div>
+        </div>
+      </div>
+      
+      <button class="btn btn-primary" onclick="copyToClipboard('calmionix.fun:19133', 'toast_ip_copied')">
+        <span data-lang="btn_copy_ip">Salin IP</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Most Popular Section -->
+  <section class="section">
+    <div class="section-header">
+      <h2 data-lang="section_popular">Paling Populer</h2>
+    </div>
+    
+    <div class="product-grid">
+      <!-- VIP Rank -->
+      <div class="product-card">
+        <span class="product-tag tag-popular" data-lang="tag_popular">Terlaris</span>
+        <div class="product-icon">👑</div>
+        <h3 data-lang="rank_vip_name">Rank VIP</h3>
+        <p class="product-desc" data-lang="rank_vip_desc">Akses dasar untuk pemain premium</p>
+        <div class="product-price">Rp 25.000</div>
+        <ul class="product-features">
+          <li data-lang="feature_fly">Command /fly</li>
+          <li data-lang="feature_hat">Command /hat</li>
+          <li data-lang="feature_chat">Chat berwarna</li>
+          <li data-lang="feature_prefix">Prefix khusus</li>
+        </ul>
+        <button class="btn btn-primary" onclick="openCheckout('vip')" data-lang="btn_buy_now">Beli Sekarang</button>
+      </div>
+      
+      <!-- 500 Shards -->
+      <div class="product-card">
+        <span class="product-tag tag-popular" data-lang="tag_popular">Terlaris</span>
+        <div class="product-icon">💎</div>
+        <h3 data-lang="shard_500_name">500 Shard</h3>
+        <p class="product-desc" data-lang="shard_500_desc">Bonus 50 shard</p>
+        <div class="product-price">Rp 45.000</div>
+        <ul class="product-features">
+          <li>500 Shard</li>
+          <li>Bonus 50 Shard</li>
+          <li data-lang="feature_chat">Chat berwarna</li>
+          <li data-lang="feature_prefix">Prefix khusus</li>
+        </ul>
+        <button class="btn btn-primary" onclick="openCheckout('shards-500')" data-lang="btn_buy_now">Beli Sekarang</button>
+      </div>
+      
+      <!-- MVP Rank -->
+      <div class="product-card">
+        <div class="product-icon">💠</div>
+        <h3 data-lang="rank_mvp_name">Rank MVP</h3>
+        <p class="product-desc" data-lang="rank_mvp_desc">Lebih banyak fitur eksklusif</p>
+        <div class="product-price">Rp 50.000</div>
+        <ul class="product-features">
+          <li data-lang="feature_heal">Command /heal</li>
+          <li data-lang="feature_feed">Command /feed</li>
+          <li data-lang="feature_particles">Efek partikel</li>
+          <li>10 homes</li>
+        </ul>
+        <button class="btn btn-primary" onclick="openCheckout('mvp')" data-lang="btn_buy_now">Beli Sekarang</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Value Section -->
+  <section class="section">
+    <div class="section-header">
+      <h2 data-lang="section_value">Paling Worth It</h2>
+    </div>
+    
+    <div class="product-grid">
+      <!-- Legend Rank -->
+      <div class="product-card">
+        <span class="product-tag tag-value" data-lang="tag_value">Paling Worth It</span>
+        <div class="product-icon">⚡</div>
+        <h3 data-lang="rank_legend_name">Rank Legend</h3>
+        <p class="product-desc" data-lang="rank_legend_desc">Pengalaman bermain terbaik</p>
+        <div class="product-price">Rp 100.000</div>
+        <ul class="product-features">
+          <li data-lang="feature_god">Command /god</li>
+          <li data-lang="feature_vanish">Command /vanish</li>
+          <li data-lang="feature_particles">Efek partikel</li>
+          <li data-lang="feature_priority">Support prioritas</li>
+        </ul>
+        <button class="btn btn-primary" onclick="openCheckout('legend')" data-lang="btn_buy_now">Beli Sekarang</button>
+      </div>
+      
+      <!-- 1000 Shards -->
+      <div class="product-card">
+        <span class="product-tag tag-value" data-lang="tag_value">Paling Worth It</span>
+        <div class="product-icon">💰</div>
+        <h3 data-lang="shard_1000_name">1000 Shard</h3>
+        <p class="product-desc" data-lang="shard_1000_desc">Bonus 150 shard</p>
+        <div class="product-price">Rp 85.000</div>
+        <ul class="product-features">
+          <li>1000 Shard</li>
+          <li>Bonus 150 Shard</li>
+          <li>Item eksklusif</li>
+          <li data-lang="feature_prefix">Prefix khusus</li>
+        </ul>
+        <button class="btn btn-primary" onclick="openCheckout('shards-1000')" data-lang="btn_buy_now">Beli Sekarang</button>
+      </div>
+      
+      <!-- God Rank -->
+      <div class="product-card">
+        <span class="product-tag tag-ultimate">Ultimate</span>
+        <div class="product-icon">🔱</div>
+        <h3 data-lang="rank_god_name">Rank God</h3>
+        <p class="product-desc" data-lang="rank_god_desc">Akses penuh semua fitur</p>
+        <div class="product-price">Rp 200.000</div>
+        <ul class="product-features">
+          <li data-lang="feature_all_commands">Semua command</li>
+          <li data-lang="feature_unlimited">Unlimited homes</li>
+          <li data-lang="feature_beta">Akses beta</li>
+          <li>Kontak admin</li>
+        </ul>
+        <button class="btn btn-primary" onclick="openCheckout('god')" data-lang="btn_buy_now">Beli Sekarang</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discord CTA Section -->
+  <section class="discord-section">
+    <div class="card discord-card">
+      <div class="discord-icon">💬</div>
+      <h3 data-lang="discord_title">Butuh bantuan atau ingin bertanya?</h3>
+      <p>Gabung komunitas Discord kami untuk mendapatkan bantuan dan update terbaru.</p>
+      <a href="https://discord.gg/qfdBAW29sT" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large" data-lang="discord_btn">Gabung Discord</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="assets/images/logo.png" alt="Calmionix">
+      <span>Calmionix</span>
+    </div>
+    <p data-lang="footer_copyright">Hak Cipta 2024 Calmionix. Tidak berafiliasi dengan Mojang Studios.</p>
+  </footer>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/lang.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
